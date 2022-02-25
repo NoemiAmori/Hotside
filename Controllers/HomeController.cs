@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Hotsite.Models;
+using MySql.Data.MySqlClient;
 
 namespace Hotsite.Controllers
 {
@@ -28,6 +29,18 @@ namespace Hotsite.Controllers
         {
             DatabaseService dbs = new DatabaseService();
             dbs.CadastraInteresse(cad);
+            try
+            {
+                dbs.CadastraInteresse(cad);
+            }
+            catch (MySqlException m)
+            {
+                _logger.LogError("Erro do MySql: " + m.Message);
+            }
+            catch(Exception e)
+            {
+                _logger.LogError("Erro no cadastro: " + e.Message);
+            }
             return View("Index",cad);
         }
 
