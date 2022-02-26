@@ -15,7 +15,7 @@
     </div>
 
     <div class="col-12 col-md-12 col-lg-8">
-        <img src="/imagens/dna.jpg" alt="" class="img-thumbnail">
+        <img src="/imagens/dna.jpg" alt="" class="img-thumbnail" style="max-width: 540px;">
     </div>
 
     <div class="row my-2">
@@ -56,7 +56,7 @@
                 <a href="#">
                     <figure class="figure">
                         <img src="/imagens/agenda.jpg" alt="Agenda de Eventos" class="img-fluid">
-                        <figcaption class="figure-caption text-center">Agenda de Eventos</figcaption>
+                        <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalAgenda">Agenda</button>
                     </figure>
                 </a>
             </div>
@@ -64,7 +64,7 @@
                 <a href="#">
                     <figure class="figure">
                         <img src="/imagens/vida.jpg" alt="Dicas de Vida Saudável" class="img-fluid">
-                        <figcaption class="figure-caption text-center">Dicas de Vida Saudável</figcaption>
+                        <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalDica">Dicas Vida Saudável</button>
                     </figure>
                 </a>
             </div>
@@ -72,7 +72,7 @@
                 <a href="#">
                     <figure class="figure">
                         <img src="/imagens/apoio.png" alt="Apoiadores" class="img-fluid">
-                        <figcaption class="figure-caption text-center">Apoiadores</figcaption>
+                        <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalApoio">Apoiadores</button>
                     </figure>
                 </a>
             </div>
@@ -80,4 +80,102 @@
     </div>
 </div>
 
+<div class="modal fade" id="modalAgenda" tabindex="-1" aria-labelledby="modalAgendaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h2 class="modal-title" id="exampleModalLabel">Agenda</h2>
+            </div>
+            <div class="modal-body">
+                <h3 class="text-center">10/10/10 10:10 - Evento 1</h3>
+                <p class="mb-5">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.</p>
+                <h3 class="text-center">10/10/10 11:10 - Evento 2</h3>
+                <p class="mb-5">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.</p>
+                <h3 class="text-center">10/10/10 12:10 - Evento 3</h3>
+                <p class="mb-5">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="modal fade" id="modalDica" tabindex="-1" aria-labelledby="modalDicaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h2 class="modal-title" id="exampleModalLabel">Dicas de vida saudável</h2>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos.</p>
+
+                <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos.</p>
+
+                <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalApoio" tabindex="-1" aria-labelledby="modalApoioLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h2 class="modal-title" id="exampleModalLabel">Apoiadores</h2>
+            </div>
+            <div class="modal-body">
+                <div class="card mb-3 pl-3" style="max-width: 340px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 m-auto">
+                            <img src="/imagens/confeitaria.png" class="img-fluid rounded-start" alt="Logo da Empresa 1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Doces Light & Diet</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 pl-3" style="max-width: 340px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 m-auto">
+                            <img src="/imagens/Vegetariano.jpg" class="img-fluid rounded-start" alt="Logo da Empresa 2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Restaurante Vegetariano</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 pl-3" style="max-width: 340px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 m-auto">
+                            <img src="/imagens/Restaurante.jpg" class="img-fluid rounded-start" alt="Logo da Empresa 3">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Restaurante</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 pl-3" style="max-width: 340px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 m-auto">
+                            <img src="/imagens/lanches.jpg" class="img-fluid rounded-start" alt="Logo da Empresa 4">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Lanches Naturais</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
